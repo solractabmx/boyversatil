@@ -14,6 +14,7 @@
 <meta property="og:url" content="https://boyversatil.vercel.app/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://boyversatil.vercel.app/banner.jpg">
 <style>
 *{box-sizing:border-box}body{margin:0;background:#000;color:#fff;font-family:system-ui;scroll-behavior:smooth}
 nav{display:flex;gap:12px;justify-content:center;padding:14px;background:#0a0a0a;border-bottom:1px solid #00f5ff30;position:sticky;top:0;z-index:10}
@@ -39,16 +40,15 @@ footer{margin:40px 0 20px;text-align:center;font-size:11px;color:#666}
 </nav>
 
 <div id="gate" class="card">
-  <h1 style="color:#7ef9ff;font-size:32px;margin:0">Boy Versatil</h1>
+  <p style="color:#7ef9ff;font-size:32px;margin:0;font-weight:bold">Boy Versatil</p>
   <p style="color:#ccc">Valladolid Yucatán</p>
   <button class="btn btn-cyan" onclick="entrar()">Soy +18 - Entrar al sitio</button>
 </div>
 
 <div id="main">
-  <img class="banner" src="banner.webp" alt="Boy Versatil Valladolid Yucatán">
-  
-  <!-- SOLO 1 H1 EN TODA LA PAGINA -->
-  <h1 style="color:#7ef9ff;margin:20px 0 6px">Boy Versatil Valladolid Yucatán</h1>
+  <img class="banner" src="banner.jpg" alt="Boy Versatil Valladolid Yucatán">
+
+  <h1 style="color:#7ef9ff;margin:20px 0 6px;font-size:30px;text-align:center">Boy Versatil Valladolid Yucatán</h1>
   <p style="color:#7ef9ff;font-weight:bold">ENCUENTROS DISCRETOS Y RESPETUOSOS</p>
 
   <section id="sobre-mi">
@@ -84,6 +84,7 @@ function entrar(){
  document.getElementById('gate').style.display='none';
  document.getElementById('main').style.display='flex';
  document.getElementById('topnav').style.display='flex';
+ window.scrollTo(0,0);
 }
 </script>
 </body>
