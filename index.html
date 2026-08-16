@@ -1,68 +1,103 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boy Versatil - Valladolid</title>
+
+<!-- SEO PRINCIPAL -->
+<title>Boy Versatil | Valladolid Yucatán | Encuentros Discretos y Respetuosos</title>
+<meta name="description" content="Boy Versatil en Valladolid, Yucatán. Todo encuentro se realiza de manera respetuosa y discreta, sin que tu vida pública se mezcle con la privada. Solo adultos +18.">
+<meta name="keywords" content="boy versatil valladolid, boy valladolid yucatan, citas discretas valladolid, encuentros yucatan">
+<meta name="author" content="Boy Versatil">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://boyversatil.vercel.app/">
+
+<!-- FAVICON E ICONOS - NUEVO -->
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="theme-color" content="#00f5ff">
+
+<!-- OPEN GRAPH - Para que se vea bonito en WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://boyversatil.vercel.app/">
+<meta property="og:title" content="Boy Versatil - Valladolid, Yucatán">
+<meta property="og:description" content="Todo encuentro se realiza de manera respetuosa y discreta, sin que tu vida pública se mezcle con la privada. Solo +18">
+<meta property="og:image" content="https://boyversatil.vercel.app/banner.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_MX">
+
+<!-- TWITTER / X CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@boyversatil">
+<meta name="twitter:url" content="https://boyversatil.vercel.app/">
+<meta name="twitter:title" content="Boy Versatil - Valladolid">
+<meta name="twitter:description" content="Encuentros discretos y respetuosos en Valladolid. Privacidad garantizada +18">
+<meta name="twitter:image" content="https://boyversatil.vercel.app/banner.webp">
+
+<!-- JSON-LD PARA GOOGLE -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"Boy Versatil",
+ "url":"https://boyversatil.vercel.app/",
+ "sameAs":["https://x.com/boyversatil"],
+ "address":{"@type":"PostalAddress","addressLocality":"Valladolid","addressRegion":"Yucatán","addressCountry":"MX"},
+ "description":"Encuentros respetuosos y discretos entre adultos en Valladolid, Yucatán."
+}
+</script>
+
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#000;color:#fff;font-family:system-ui,Arial;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:12px}
-.card{border:1px solid #00f5ff;padding:28px;border-radius:24px;text-align:center;max-width:380px;width:100%;box-shadow:0 0 30px #00f5ff33}
-h1{color:#7ef9ff;font-size:34px;margin:0}
+.card{border:1px solid #00f5ff;padding:28px;border-radius:24px;text-align:center;max-width:380px;width:100%;box-shadow:0 0 30px #00f5ff33;background:#0a0a0a}
+h1{color:#7ef9ff;font-size:34px;margin:0;letter-spacing:1px}
 .btn{display:block;width:100%;padding:16px;margin-top:14px;border-radius:14px;font-weight:bold;text-decoration:none;text-align:center;font-size:16px;transition:.2s}
-.btn:hover{transform:scale(1.02)}
-.btn-cyan{background:#00f5ff;color:#000}
+.btn:hover{transform:scale(1.02);filter:brightness(1.1)}
+.btn-cyan{background:#00f5ff;color:#000;box-shadow:0 0 15px #00f5ff66}
 .btn-white{background:#fff;color:#000}
-#main{display:none;flex-direction:column;align-items:center;width:100%;max-width:900px}
+#main{display:none;flex-direction:column;align-items:center;width:100%;max-width:900px;animation:fade .4s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
 .banner{width:100%;border-radius:18px;border:1px solid #00f5ff33;object-fit:cover}
-.info{color:#ddd;font-size:15px;line-height:1.6;margin:16px 0;max-width:520px;text-align:center;border:1px solid #ffffff20;padding:14px;border-radius:12px;background:#ffffff08}
+.info{color:#ddd;font-size:15px;line-height:1.6;margin:18px 0;max-width:520px;text-align:center;border:1px solid #ffffff20;padding:14px 18px;border-radius:12px;background:#ffffff08}
 .btns{width:100%;max-width:420px}
-
-/* RESPONSIVO */
-@media(min-width:768px){
-  #main{padding:30px}
-  h1{font-size:42px}
-  .banner{max-height:400px}
-  .info{font-size:16px}
-  .btn{font-size:17px;padding:18px}
-}
-@media(max-width:480px){
-  h1{font-size:30px}
-  .card{padding:20px}
-}
+@media(min-width:768px){#main{padding:30px} h1{font-size:44px} .banner{max-height:420px} .info{font-size:16px}}
+@media(max-width:480px){h1{font-size:30px} .card{padding:20px}}
 </style>
 </head>
 <body>
 
 <div id="gate" class="card">
   <h1>Boy Versatil</h1>
-  <p>Amistad • Citas</p>
-  <p style="font-size:12px;color:#aaa;margin:16px 0">Contenido +18. Solo mayores de edad.</p>
+  <p style="color:#ccc">Amistad • Citas • Valladolid</p>
+  <p style="font-size:12px;color:#888;margin:18px 0;line-height:1.4">Contenido +18. Al entrar confirmas que eres mayor de edad y respetas la privacidad.</p>
   <button class="btn btn-cyan" onclick="entrar()">Soy +18 - Entrar</button>
 </div>
 
 <div id="main">
-  <img class="banner" src="banner.jpg" alt="Boy Versatil">
-  <h1 style="margin-top:18px">Boy Versatil</h1>
-  <p style="color:#7ef9ff;margin:6px 0">Valladolid, Yucatán</p>
+  <img class="banner" src="banner.jph" alt="Boy Versatil Valladolid Yucatan">
+  <h1 style="margin-top:20px">Boy Versatil</h1>
+  <p style="color:#7ef9ff;margin:6px 0;font-weight:bold;letter-spacing:.5px">VALLADOLID, YUCATÁN • DISPONIBLE</p>
   
   <p class="info">
     Todo encuentro se realiza de manera <b style="color:#7ef9ff">respetuosa y discreta</b>, sin que tu vida pública se mezcle con la privada.<br>
-    Solo adultos +18, con respeto mutuo.
+    Solo adultos +18, con respeto mutuo y privacidad garantizada.
   </p>
 
   <div class="btns">
-    <a class="btn btn-white" href="https://x.com/boyversatil" target="_blank">X - @boyversatil</a>
-    <a class="btn btn-cyan" href="https://wa.me/529851173551?text=Hola%20vengo%20de%20tu%20perfil%20de%20X%20%40boyversatil%20" target="_blank">WhatsApp 985 117 3551</a>
+    <a class="btn btn-white" href="https://x.com/boyversatil" target="_blank" rel="noopener">X - @boyversatil</a>
+    <a class="btn btn-cyan" href="https://wa.me/529851173551?text=Hola%20vengo%20de%20tu%20perfil%20de%20X%20%40boyversatil%20" target="_blank" rel="noopener">WhatsApp 985 117 3551</a>
   </div>
-  <p style="font-size:10px;color:#555;margin-top:28px">+18 • Encuentros consensuados entre adultos</p>
+  <p style="font-size:10px;color:#555;margin-top:32px;letter-spacing:1px">+18 • ENCUENTROS CONSENSUADOS ENTRE ADULTOS • DISCRECIÓN TOTAL</p>
 </div>
 
 <script>
 function entrar(){
  document.getElementById('gate').style.display='none';
  document.getElementById('main').style.display='flex';
+ window.scrollTo(0,0);
 }
 </script>
 </body>
