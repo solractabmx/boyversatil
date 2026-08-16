@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://boyversatil.vercel.app/sitemap.xml
