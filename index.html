@@ -97,7 +97,93 @@ footer{margin:40px 0 20px;text-align:center;font-size:11px;color:#666}
     <a class="btn btn-white" href="https://x.com/boyversatil" target="_blank" rel="noopener">X - @boyversatil</a>
     <a class="btn btn-cyan" href="https://wa.me/529851173551?text=Hola%20vengo%20de%20tu%20web%20boyversatil%20Valladolid" target="_blank" rel="noopener">WhatsApp 985 117 3551 - Boy Valladolid</a>
   </section>
+<!-- WIDGET BOY VERSATIL - INLINE -->
+<div id="bv-widget" style="font-family:sans-serif;">
 
+  <!-- BOTON AGENDAR -->
+  <div style="text-align:center; margin:20px 0;">
+    <button onclick="document.getElementById('bv-modal').style.display='flex'" style="background:#0f0f0f; color:#fff; border:1px solid #d4af37; padding:14px 32px; border-radius:30px; font-weight:800; font-size:16px; cursor:pointer; display:inline-flex; align-items:center; gap:8px;">
+      <span style="color:#d4af37;">❤️‍🔥</span> AGENDAR CITA
+    </button>
+  </div>
+
+  <!-- MODAL -->
+  <div id="bv-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.85); z-index:99999; justify-content:center; align-items:center; padding:15px;">
+    <div style="background:#111; border:1px solid #d4af37; border-radius:20px; max-width:420px; width:100%; padding:22px; color:#fff; max-height:90vh; overflow-y:auto;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+        <h3 style="margin:0; color:#d4af37; font-size:18px; font-weight:800;">Agendar con Boy Versatil</h3>
+        <span onclick="document.getElementById('bv-modal').style.display='none'" style="cursor:pointer; font-size:26px; color:#fff; line-height:1;">×</span>
+      </div>
+      <form onsubmit="bvEnviar(event)" style="display:flex; flex-direction:column; gap:12px;">
+        <label style="font-size:11px; color:#888; font-weight:700;">¿QUÉ SERVICIO BUSCAS?</label>
+        <select id="bv-servicio" required style="background:#1a1a1a; color:#fff; border:1px solid #333; border-radius:10px; padding:12px; width:100%;">
+          <option value="">Selecciona</option>
+          <option>Versátil</option>
+          <option>Activo</option>
+          <option>Pasivo</option>
+          <option>Masaje</option>
+        </select>
+
+        <label style="font-size:11px; color:#888; font-weight:700;">¿TIENES LUGAR?</label>
+        <select id="bv-lugar" required style="background:#1a1a1a; color:#fff; border:1px solid #333; border-radius:10px; padding:12px; width:100%;">
+          <option value="">Selecciona</option>
+          <option>Yo tengo lugar</option>
+          <option>Tú tienes lugar</option>
+          <option>Hotel / Motel</option>
+        </select>
+
+        <label style="font-size:11px; color:#888; font-weight:700;">¿PRESERVATIVOS?</label>
+        <select id="bv-condon" required style="background:#1a1a1a; color:#fff; border:1px solid #333; border-radius:10px; padding:12px; width:100%;">
+          <option value="">Selecciona</option>
+          <option>Sí, yo llevo</option>
+          <option>Que lleve él</option>
+        </select>
+
+        <label style="font-size:11px; color:#d4af37; font-weight:700;">¿POR CUÁNTO TIEMPO?</label>
+        <select id="bv-tiempo" required style="background:#1a1a1a; color:#fff; border:1px solid #d4af37; border-radius:10px; padding:12px; width:100%; font-weight:700;">
+          <option value="">Selecciona duración</option>
+          <option>1 hora - Rápido</option>
+          <option>2 horas - Completo</option>
+          <option>3 horas - Sin prisa</option>
+          <option>Toda la noche</option>
+          <option>Fin de semana</option>
+        </select>
+
+        <label style="font-size:11px; color:#888; font-weight:700;">TU NOMBRE</label>
+        <input id="bv-nombre" type="text" placeholder="Ej. Alex" required style="background:#1a1a1a; color:#fff; border:1px solid #333; border-radius:10px; padding:12px; width:100%; box-sizing:border-box;">
+
+        <button type="submit" style="margin-top:10px; background:#d4af37; color:#000; border:none; padding:14px; border-radius:30px; font-weight:900; cursor:pointer; width:100%; font-size:15px;">ENVIAR POR WHATSAPP →</button>
+        <p style="font-size:9px; color:#555; text-align:center; margin:5px 0 0 0;">100% privado y confidencial</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOTANTE -->
+  <a href="https://wa.me/529851173551?text=Hola%20Boy%20Versatil%20🦁%20vi%20tu%20web" target="_blank" style="position:fixed; bottom:20px; right:20px; z-index:9999; display:flex; align-items:center; gap:10px; background:#0f0f0f; border:1px solid #d4af37; padding:6px 14px 6px 6px; border-radius:50px; text-decoration:none;">
+    <img src="bv-logo.png" style="width:40px; height:40px; border-radius:50%; border:1px solid #d4af37; object-fit:cover; display:block;">
+    <div style="line-height:1;">
+      <div style="color:#fff; font-weight:800; font-size:13px;">Boy Versatil</div>
+      <div style="color:#d4af37; font-size:10px; font-weight:700; letter-spacing:1px; margin-top:2px;">CANAL OFICIAL</div>
+    </div>
+    <div style="background:#fff; color:#000; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:14px;">→</div>
+  </a>
+
+</div>
+
+<script>
+function bvEnviar(e){
+  e.preventDefault();
+  var s=document.getElementById('bv-servicio').value;
+  var l=document.getElementById('bv-lugar').value;
+  var c=document.getElementById('bv-condon').value;
+  var t=document.getElementById('bv-tiempo').value;
+  var n=document.getElementById('bv-nombre').value;
+  var msg='Hola Boy Versatil 🦁%0AQuiero agendar:%0A%0A👤 Nombre: '+encodeURIComponent(n)+'%0A🔥 Servicio: '+encodeURIComponent(s)+'%0A📍 Lugar: '+encodeURIComponent(l)+'%0A🛡️ Preservativos: '+encodeURIComponent(c)+'%0A⏰ Tiempo: '+encodeURIComponent(t);
+  window.open('https://wa.me/529851173551?text='+msg,'_blank');
+  document.getElementById('bv-modal').style.display='none';
+}
+</script>
+<!-- FIN WIDGET -->
   <footer>
     <a href="#sobre-mi" style="color:#666">Sobre Mí</a> | <a href="#servicios" style="color:#666">Servicios</a> | <a href="#ubicacion" style="color:#666">Ubicación</a> | <a href="#contacto" style="color:#666">Contacto</a>
     <p>+18 • Boy Versatil Valladolid Yucatán • boyversatil.vercel.app • Contenido solo para adultos</p>
